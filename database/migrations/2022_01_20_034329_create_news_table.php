@@ -20,6 +20,9 @@ class CreateNewsTable extends Migration
             $table->text('description');
             $table->text('news_body');
             $table->timestamps();
+
+            # При реализaции мягкого удаления
+          //  $table->softDeletes();
         });
     }
 
